@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block title %} UNES - Página Quem Somos {% endblock %}
+
+{% block main %}
+<table border="0" width="900" align="center">
+    <tr>
+        <td height="89">
+            <img src={% static "imagens/logo.png" %} alt="Logo com o nome da Universidade">
+        </td>
+        <td align="center">
+            <a href="{% url 'index' %}">Home</a> |
+            <a href="{% url 'quem-somos' %}">Quem Somos</a> |
+            <a href="{% url 'contato' %}">Contato</a> |
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <h2>Quem Somos</h2>
+            <p>
+                Lorem <strong> ipsum dolor </strong> sit <em>amet</em>, consectetur adipiscing elit.
+                Aenean a posuere nunc, in scelerisque erat.
+                Sed id egestas ligula, non bibendum odio.
+                Phasellus molestie maximus nunc fermentum laoreet.
+                In hac habitasse platea dictumst.
+                Etiam velit nulla, elementum at justo molestie, iaculis semper sapien.
+                Ut ac tincidunt nisl, nec venenatis massa.
+                Mauris maximus sem arcu, a volutpat arcu facilisis quis.
+                Fusce vehicula ligula eu ligula sodales, id porttitor ipsum euismod.
+                Morbi mollis mi massa, ac hendrerit nisi rhoncus in.
+                Morbi eleifend elementum luctus.
+                Duis accumsan velit quam.
+                Etiam eu dignissim purus.
+                Proin feugiat hendrerit tempus.
+            </p>
+
+            <hr>
+            
+            <h2> 5 motivos para estudar</h2>
+            <ol>
+                <li>Material sempre atualizado</li>
+                <li>Tablets em sala de aula</li>
+                <li>Professores Renomados</li>
+                <li>Universidade bem avaliada</li>
+                <li>Ótima Localização</li>
+            </ol>
+
+            <hr>
+
+            <h2>Objetivos</h2>
+
+            <p>
+                Lorem <strong> ipsum dolor </strong> sit <em>amet</em>, consectetur adipiscing elit.
+                Aenean a posuere nunc, in scelerisque erat.
+                Sed id egestas ligula, non bibendum odio.
+                Phasellus molestie maximus nunc fermentum laoreet.
+                In hac habitasse platea dictumst.
+                Etiam velit nulla, elementum at justo molestie, iaculis semper sapien.
+                Ut ac tincidunt nisl, nec venenatis massa.
+                Mauris maximus sem arcu, a volutpat arcu facilisis quis.
+                Fusce vehicula ligula eu ligula sodales, id porttitor ipsum euismod.
+                Morbi mollis mi massa, ac hendrerit nisi rhoncus in.
+                Morbi eleifend elementum luctus.
+                Duis accumsan velit quam.
+                Etiam eu dignissim purus.
+                Proin feugiat hendrerit tempus.
+            </p>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" align="center">
+            <h4> Todos os Direitos Reservados </h4>
+        </td>
+    </tr>
+</table>
+
+{% endblock %}

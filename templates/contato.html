@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap %}
+
+{% block title %} UNES - Página de Contato {% endblock %}
+
+{% block main %}
+    <table border="0" width="900" align="center">
+        <tr>
+            <td height="89">
+                <img src={% static "imagens/logo.png" %} alt="Logo com o nome da Universidade">
+            </td>
+            <td align="center">
+                <a href="{% url 'index' %}">Home</a> |
+                <a href="{% url 'quem-somos' %}">Quem Somos</a> |
+                <a href="{% url 'contato' %}">Contato</a> |
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <h2>Entre em Contato</h2>
+                <p>
+                    Lorem sit, consectetur adipiscing elit.
+                    Aenean a posuere nunc, in scelerisque erat.
+                </p>
+            <hr>
+
+            <form action="" method="post">
+                {% csrf_token %}
+                {{ form | bootstrap}}
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+            {{mensagem}}
+            </td>
+        </tr>
+    <tr>
+        <td colspan="2" align="center">
+            <h4> Todos os Direitos Reservados </h4>
+        </td>
+    </tr>
+</table>
+{% endblock %}
